@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="Stylesheet" type="text/css" href="style.css">
     <title>Etch-a-sketch</title>
 </head>
 <body>
+
     <div>
-        <h1>Etch-a-sketch</h1>
-        <h2>Click and drag the mouse through the canvas to draw</h2>
-
-        <div id="canvas">
-
+        <div>
+            <h1>Etch-a-sketch</h1>
+                <h2>Click and drag the mouse <br>through the canvas to draw</h2>
+                <label for="gridSize">Grid Size:</label>
+                <input type="range" id="gridSize" name="points" min="2" max="50">
+                <label for="gridSize" id="currentGridSize"></p>
         </div>
+        
+        <main>
+            <div id="canvas">
+            </div>
+
+        </main>
+        
     </div>
 </body>
 </html>

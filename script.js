@@ -1,17 +1,27 @@
+let elements;
 document.addEventListener("DOMContentLoaded", loaded)
 
  function loaded(){
-    loadCanvas(50)
+    loadCanvas(25)
+
+    document.getElementById("gridSize").addEventListener("change", 
+    function(){
+        let gridSize = document.getElementById("gridSize").valueAsNumber;loadCanvas(gridSize)
+    ;})
+
  }
 
  function loadCanvas(gridSize){
-    drawCanvas(gridSize)
+    document.getElementById("currentGridSize").innerHTML= gridSize;
+    drawCanvas(gridSize);
+    elements = document.getElementsByClassName("pixel");
+
  }
 
  function drawCanvas(gridSize){
     let innHTML="";
 
-
+    document.getElementById("canvas").innerHTML= innHTML;
 
     for(let i=0; i<gridSize; i++){
         innHTML = innHTML + "<div class='row'>"

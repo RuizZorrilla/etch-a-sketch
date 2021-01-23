@@ -1,6 +1,7 @@
 body{
-    background-color: rgb(9, 53, 54);
-    color: blanchedalmond;
+    background-color: rgb(158, 158, 158);
+    color: rgb(216, 206, 206);
+    font-family: 'Potta One', cursive;
 }
 #canvas{
     border-style: solid;
@@ -9,12 +10,28 @@ body{
     height: 600px;
     width: 600px;
     display: flex;
+    margin: 10px;
 }
 
+h1{
+    text-align: center;
+    margin: 5px;
+}
+
+
 body > div{
+    border-radius: 20px;
+    background-color: rgb(90, 23, 23);
+    padding: 20px;
+    display: flex;
     max-width: fit-content;
     margin: 0 auto;
-    text-align: center;
+    top:0;
+}
+
+#currentGridSize{
+    padding:0;
+    margin:0;
 }
 
 #canvas>div>div{
@@ -22,4 +39,3 @@ body > div{
     border-color: grey;
     border-width: 1px;
 }
-
