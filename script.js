@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", loaded)
 
     document.getElementById("eraser").addEventListener("click",function(){ currentColor='white'});
     document.getElementById("pencil").addEventListener("click", function(){ currentColor='black'});
+    document.getElementById("color").addEventListener("change", function(){ currentColor=document.getElementById("color").value});
 
  }
 
