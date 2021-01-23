@@ -29,13 +29,20 @@ body > div{
     top:0;
 }
 
-#currentGridSize{
-    padding:0;
-    margin:0;
-}
 
 #canvas>div>div{
     border-style: solid;
     border-color: grey;
     border-width: 1px;
 }
+
+button{
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;}
+
