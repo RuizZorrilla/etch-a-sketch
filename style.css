@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(9, 53, 54);
+    color: blanchedalmond;
+}
+#canvas{
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    display: flex;
+}
+
+body > div{
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#canvas>div>div{
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+}
+
